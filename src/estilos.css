@@ -21,7 +21,7 @@ body::before {
     justify-content: center;
     align-items: center;   
     gap: 20px;
-    padding: 110px 0 50px 0;
+    padding: 70px 0 50px 0;
     z-index: 1;
     position: relative;
 }
@@ -138,7 +138,6 @@ body::before {
     color: #f1ecff;
     padding: 4px;
     text-align: center;
-    margin-bottom: 5px;
     cursor: default;
 }
 
@@ -147,5 +146,23 @@ body::before {
     text-align: justify;
     max-height: 115px;
     overflow-y: auto;
-    /* -webkit-scrollbar: achar como fazer; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: #506080;
+	-webkit-border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: rgba(180, 180, 185);
+	-webkit-border-radius: 6px;
 }

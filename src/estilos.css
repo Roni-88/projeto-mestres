@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&display=swap');
 
-
-
 body {
     font-family: 'Outfit', sans-serif;
     background: url(imagens/fundo-geral.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
 }
 
 .cabecalho {
@@ -15,16 +22,18 @@ body {
     align-items: center;   
     gap: 20px;
     padding: 110px 0 50px 0;
+    z-index: 1;
+    position: relative;
 }
 
 .cabecalho .titulo {
-    color: #f1ecff;   
+    color: rgba(10, 10, 110, 0.8);   
 }
 
 .cabecalho .musica {
     width: 60px;
     height: 60px;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 
 .mestres-slider {
@@ -36,8 +45,7 @@ body {
 
 .lista-mestres {
     position: relative;
-    /* background: url(imagens/fundo-azul.jpg) no-repeat; */
-    border: 4px solid #cecece;
+    border: 4px solid #fff;
     border-radius: 20px;    
     width: 400px;
     height: 620px;
@@ -46,15 +54,15 @@ body {
 .btn-seta {
     width: 80px;
     height: 80px;
-    border-radius: 20px;
-    background-color: yellowgreen;
     cursor: pointer;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;   
+    border: none;   
+    position: relative;
+    background: url(imagens/palheta1.png) no-repeat;
+    background-size: cover;
 }
 
 .btn-seta.btn-voltar {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);  
 }
 
 .cartao {
@@ -65,7 +73,7 @@ body {
     height: 100%;
     position: absolute;
     padding: 12px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(30, 30, 80, 0.5) 0px 5px 20px 5px;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -99,5 +107,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 8px;
+}
+
+.cartao .informacoes .nome{
+    color: #f1ecff;
+}
+
+.cartao .container-imagem {
+    text-align: center;   
+}
+
+.cartao .imagem-mestres{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.cartao .descricao {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #506080;
+    color: #f1ecff;
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cartao .descricao .texto {
+    padding: 5px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+    /* -webkit-scrollbar: achar como fazer; */
 }

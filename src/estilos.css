@@ -27,7 +27,8 @@ body::before {
 }
 
 .cabecalho .titulo {
-    color: rgba(10, 10, 110, 0.8);   
+    color: rgba(10, 10, 110, 0.8);
+    cursor: default;   
 }
 
 .cabecalho .musica {
@@ -110,6 +111,7 @@ body::before {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 8px;
+    cursor: default;
 }
 
 .cartao .informacoes .nome{
@@ -137,6 +139,7 @@ body::before {
     padding: 4px;
     text-align: center;
     margin-bottom: 5px;
+    cursor: default;
 }
 
 .cartao .descricao .texto {

@@ -148,6 +148,19 @@ body::before {
     overflow-y: auto;
 }
 
+.cartao .descricao .texto a {
+    text-decoration: none;
+    color: #f1ecff;
+    padding: 1px 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #506080;
+}
+
+.cartao .descricao .texto a:hover {
+    color: dodgerblue;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

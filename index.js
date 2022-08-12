@@ -13,8 +13,12 @@ function mostrarCartao (indiceCartao) {
 }
 
 btnAvancar.addEventListener ('click', function () {
-    if (cartaoAtual === cartoes.length - 1) return
+    if (cartaoAtual === cartoes.length - 1) {
+        btnAvancar.classList.add ('opaco')       
+        return
+    } 
 
+  
     esconderCartaoSelecionado ()
     cartaoAtual++   
     mostrarCartao (cartaoAtual)

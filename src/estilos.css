@@ -66,6 +66,10 @@ body::before {
     transform: rotateY(180deg);  
 }
 
+.opaco {
+    opacity: 0.5;
+}
+
 .cartao {
     display: flex;
     flex-direction: column;

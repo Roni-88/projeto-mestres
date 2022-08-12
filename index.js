@@ -17,15 +17,18 @@ btnAvancar.addEventListener ('click', function () {
         btnAvancar.classList.add ('opaco')       
         return
     } 
-
-  
+ 
     esconderCartaoSelecionado ()
     cartaoAtual++   
     mostrarCartao (cartaoAtual)
 })
 
-btnVoltar.addEventListener('click', function () {
+btnVoltar.addEventListener ('click', function () {
     if (cartaoAtual === 0) return
+
+    if (cartaoAtual >= 1) {
+        btnVoltar.classList.remove ('opaco')
+    } 
 
     esconderCartaoSelecionado ()
     cartaoAtual--   

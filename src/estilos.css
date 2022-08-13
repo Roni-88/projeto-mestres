@@ -68,6 +68,7 @@ body::before {
 
 .opaco {
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .cartao {

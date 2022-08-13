@@ -147,7 +147,7 @@ body::before {
 }
 
 .cartao .descricao .texto {
-    padding: 5px;
+    padding: 5px;   
     text-align: justify;
     max-height: 115px;
     overflow-y: auto;
@@ -156,7 +156,8 @@ body::before {
 .cartao .descricao .texto a {
     text-decoration: none;
     color: #f1ecff;
-    padding: 1px 5px;
+    padding: 1px 15px;
+    
     border-radius: 20px;
     font-size: 15px;
     background-color: #506080;

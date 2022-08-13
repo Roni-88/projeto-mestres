@@ -1,7 +1,7 @@
 @media (max-width: 620px) {
     .mestres-slider {
         padding: 0 15px;
-        gap: 10p;
+        gap: 20px;
     }
 
     .btn-seta {
@@ -26,3 +26,19 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 465px) {
+    .cabecalho {
+        gap: 15px;
+    }
+    .cabecalho .musica {
+        width: 40px;
+        height: 40px;
+    }
+    .cabecalho .titulo {
+        font-size: 25px;
+    }
+    .cartao .descricao .texto {
+        font-size: 15px;
+    }
+    }

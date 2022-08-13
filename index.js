@@ -13,10 +13,13 @@ function mostrarCartao (indiceCartao) {
 }
 
 btnAvancar.addEventListener ('click', function () {
-    if (cartaoAtual === cartoes.length - 1) {
-        btnAvancar.classList.add ('opaco')       
-        return
-    } 
+    if (cartaoAtual === 0) {
+        btnVoltar.classList.remove ('opaco')       
+    }
+    
+    if (cartaoAtual === cartoes.length -2) {
+        btnAvancar.classList.add ('opaco')
+    }
  
     esconderCartaoSelecionado ()
     cartaoAtual++   
@@ -24,10 +27,12 @@ btnAvancar.addEventListener ('click', function () {
 })
 
 btnVoltar.addEventListener ('click', function () {
-    if (cartaoAtual === 0) return
+    if (cartaoAtual === 1) {
+        btnVoltar.classList.add ('opaco')
+    }
 
-    if (cartaoAtual >= 1) {
-        btnVoltar.classList.remove ('opaco')
+    if (cartaoAtual === cartoes.length -1) {
+        btnAvancar.classList.remove ('opaco')
     } 
 
     esconderCartaoSelecionado ()

@@ -38,7 +38,11 @@
     .cabecalho .titulo {
         font-size: 25px;
     }
+    .cartao .informacoes .nome {
+        max-width: 100%;
+        font-size: 17px;
+    }
     .cartao .descricao .texto {
         font-size: 15px;
     }
-    }
+}
